@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# ACMESTORE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Yet another simple webstore. See all the documentation relative to this project here : [doc](./doc/README.md)
+
+# Usage 
 
 ## Available Scripts
 

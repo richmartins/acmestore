@@ -22,17 +22,14 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 .
 ├── README.md
 ├── doc
+│   └── assets
+│   └── assignement
+│   └── README.md
 │   └── uc
+├── node_modules
 ├── package.json
 ├── package-lock.json
-├── node_modules
 ├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
 ├── src
 │   ├── App.css
 │   ├── App.test.tsx
@@ -66,13 +63,16 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 
 ## Architecture
 
-### Diagramme d'activité
+### Diagramme de cas d'utilisations
 
-![acmestore_activity_diag](./assets/acmestore_activity_diag.png)
+![acmestore_uc_diag](./assets/acmestore_uc_diag.png)
+
+### Diagramme d'activité
 
 ### Cas d'utilistations
 
 * [Cas d'utilistation 001](./uc/uc-001.md)
+* [Cas d'utilistation 002](./uc/uc-002.md)
 
 ### Design
 
