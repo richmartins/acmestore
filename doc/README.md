@@ -8,7 +8,7 @@ Pendant le cours _"Composants d'application"_ de la session 2023-24 de l'[IDEC](
 
 ## Structure du code
 
-L'arboresence des fichiers du projet suit les normes conseille par [react.js](https://react.dev) documenter sur cette page web : [File Structure](https://legacy.reactjs.org/docs/faq-structure.html).
+L'arboresence des fichiers du projet suit les normes conseillée par [react.js](https://react.dev) sur leur site de documentation : [File Structure](https://legacy.reactjs.org/docs/faq-structure.html).
 
 C'est dire que nous avons un dossier principal `src` où tout le code source se trouvent et à l'intérieur de celui-ci, les fichiers javascript seront regrouper par :
 
@@ -57,8 +57,6 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 │   └── setupTests.ts
 ├── tailwind.config.js
 └── tsconfig.json
-
-13 directories, 38 files
 ```
 
 ## Architecture
@@ -67,12 +65,26 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 
 ![acmestore_uc_diag](./assets/acmestore_uc_diag.png)
 
-### Diagramme d'activité
-
 ### Cas d'utilistations
 
 * [Cas d'utilistation 001](./uc/uc-001.md)
 * [Cas d'utilistation 002](./uc/uc-002.md)
+
+### Diagrammes d'activité
+
+#### UC1-001-AC-001 : Afficher liste des produits
+
+![UC-001-AC-001](./assets/UC-001-AC-001.png)
+
+### Diagramme de classe (WIP)
+
+![diag_class](./assets/diag_class.png)
+
+### Diagramme de paquet (WIP)
+
+En suivant le principe *"Domain Driven Design"* le diagramme ci-dessous illustre l'architecture de l'application
+
+![diag_package](./assets/diag_package.png)
 
 ### Design
 
