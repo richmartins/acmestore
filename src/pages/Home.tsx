@@ -1,11 +1,10 @@
 import React from 'react';
-import Button from '../components/Button';
+import CardDeck from '../components/CardDeck';
 
 const Home: React.FC = () => {
     return (
         <>
-            <h1>Hello, World!</h1>
-            <Button type="button" text="Click me" onClick={() => console.log('Button clicked!')} />
+            <CardDeck></CardDeck>
         </>
     );
 };

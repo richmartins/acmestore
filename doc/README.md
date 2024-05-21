@@ -76,6 +76,8 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 
 ![UC-001-AC-001](./assets/UC-001-AC-001.png)
 
+#### UC2-002-AC-001
+
 ### Diagramme de classe (WIP)
 
 ![diag_class](./assets/diag_class.png)
