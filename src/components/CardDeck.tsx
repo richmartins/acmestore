@@ -1,8 +1,8 @@
 import Card from './Card';
 
-import db from '../mock/db.json';
+import { ProductService } from '../services';
 
-const products = db.products;
+const products = new ProductService().getProducts();
 
 const CardDeck: React.FC = () => {
     return (
@@ -11,8 +11,8 @@ const CardDeck: React.FC = () => {
                 <Card
                     key={product.id}
                     id={product.id}
-                    title={product.title}
-                    desc={product.desc}
+                    title={product.name}
+                    desc={product.description}
                     price={product.price}
                     img={product.img}
                 />
