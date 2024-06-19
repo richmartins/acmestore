@@ -1,18 +1,18 @@
 
-import { IProduct } from './interfaces';
+import { IProduct } from './IProduct';
 
 class Product implements IProduct {
     id: number;
-    name: string;
+    title: string;
     price: number;
-    description: string;
+    desc: string;
     img: string;
 
     constructor(id: number, name: string, price: number, description: string, img: string) {
         this.id = id;
-        this.name = name;
+        this.title = name;
         this.price = price;
-        this.description = description;
+        this.desc = description;
         this.img = img;
     }
 

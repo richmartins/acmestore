@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProductService } from "../services";
+import { ProductService } from "../domain/service/ProductService";
 import { useParams } from "react-router-dom";
 
 const productService = new ProductService();
@@ -12,11 +12,11 @@ const ProductOverview: React.FC = () => {
     <>
       <h1>Product Overview</h1>
       <div className="bg-white p-4 rounded shadow-md">
-        <h2 className="text-lg font-semibold">{product.name}</h2>
-        <p className="text-gray-500">{product.description}</p>
+        <h2 className="text-lg font-semibold">{product.title}</h2>
+        <p className="text-gray-500">{product.desc}</p>
         <img
           src={product.img}
-          alt={product.name}
+          alt={product.title}
           className="w-full h-48 object-cover mt-2"
         />
         <p>{product.price}.- CHF</p>

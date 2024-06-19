@@ -1,6 +1,8 @@
-import { IProductRepository } from "./interfaces";
-import { Product } from "./types";
-import data from './mock/db.json'; // <----- cannot be async while doing DDD i guess :/ - `fetch` needs to be async, `require`cannot use a variable
+import { IProductRepository } from './IProductRepository';
+import { Product } from '../../entity/product/Product';
+// import { fs } from 'fs';
+
+import data from '../../../mock/db.json'; // <----- cannot be async while doing DDD i guess :/ - `fetch` needs to be async, `require`cannot use a variable
 
 class ProductRepositoryJson implements IProductRepository {
   products: Product[];
@@ -14,9 +16,9 @@ class ProductRepositoryJson implements IProductRepository {
       (product: any) =>
         new Product(
           product.id,
-          product.name,
+          product.title,
           product.price,
-          product.description,
+          product.desc,
           product.img
         )
     );
@@ -33,9 +35,9 @@ class ProductRepositoryJson implements IProductRepository {
     if (foundProduct) {
       return new Product(
         foundProduct.id,
-        foundProduct.name,
+        foundProduct.title,
         foundProduct.price,
-        foundProduct.description,
+        foundProduct.desc,
         foundProduct.img
       );
     }
@@ -51,9 +53,9 @@ class ProductRepositoryJson implements IProductRepository {
       (p: Product) => p.id === product.id
     );
     if (foundProduct) {
-      foundProduct.name = product.name;
+      foundProduct.title = product.title;
       foundProduct.price = product.price;
-      foundProduct.description = product.description;
+      foundProduct.desc = product.desc;
       foundProduct.img = product.img;
     }
   }
@@ -66,6 +68,10 @@ class ProductRepositoryJson implements IProductRepository {
       this.products.splice(index, 1);
     }
   }
+
+    saveProducts(): void {
+        // fs.writeFileSync('./db.json', JSON.stringify(this.products));
+    }
 }
 
 export { ProductRepositoryJson };

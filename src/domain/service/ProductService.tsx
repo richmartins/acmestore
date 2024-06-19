@@ -1,6 +1,7 @@
-import { Product } from './types';
-import { IProductRepository } from './interfaces';
-import { ProductRepositoryJson } from './repositories';
+
+import { Product } from '../entity/product/Product';
+import { IProductRepository } from '../repository/product/IProductRepository';
+import { ProductRepositoryJson } from '../repository/product/ProductJsonRepository';
 
 class ProductService {
     productRepository: IProductRepository = new ProductRepositoryJson();

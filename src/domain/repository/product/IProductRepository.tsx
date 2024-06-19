@@ -1,12 +1,4 @@
-interface IProduct {
-    id: number;
-    name: string;
-    price: number;
-    description: string;
-    img: string;
-    setPrice: (price: number) => void;
-    getPrice: () => number;
-}
+import { IProduct } from "../../entity/product/IProduct";
 
 interface IProductRepository {
     getProducts: () => IProduct[];
@@ -16,4 +8,4 @@ interface IProductRepository {
     deleteProduct: (id: number) => void;
 }
 
-export type {IProduct, IProductRepository, };
+export type {IProductRepository };
