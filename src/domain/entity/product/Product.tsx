@@ -1,7 +1,7 @@
 
-import { IProduct } from './IProduct';
+import IProduct from './IProduct';
 
-class Product implements IProduct {
+export default class Product implements IProduct {
     id: number;
     title: string;
     price: number;
@@ -24,5 +24,3 @@ class Product implements IProduct {
         return this.price;
     }
 }
-
-export {Product};

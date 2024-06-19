@@ -1,5 +1,4 @@
-
-interface IProduct {
+export default interface IProduct {
     id: number;
     title: string;
     price: number;
@@ -8,5 +7,3 @@ interface IProduct {
     setPrice: (price: number) => void;
     getPrice: () => number;
 }
-
-export type {IProduct};

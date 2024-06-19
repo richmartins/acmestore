@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar: React.FC = () => {
   const location = useLocation();
 
-
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [burgerMenuClicked, setBurgerMenuClicked] = useState(false);
 
@@ -19,7 +18,6 @@ const NavBar: React.FC = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
 
   const handleBurgerMenuClick = () => {
     setBurgerMenuClicked(!burgerMenuClicked);
@@ -52,8 +50,8 @@ const NavBar: React.FC = () => {
           />
         </svg>
       </button>
-      {(isMobile && burgerMenuClicked || !isMobile) && (
-        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+      {((isMobile && burgerMenuClicked) || !isMobile) && (
+        <ul className="font-medium flex flex-col ml-2 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
           <li>
             <Link
               className={`block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-white ${

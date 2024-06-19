@@ -1,10 +1,10 @@
-import { IProductRepository } from './IProductRepository';
-import { Product } from '../../entity/product/Product';
+import IProductRepository from './IProductRepository';
+import Product from '../../entity/product/Product';
 // import { fs } from 'fs';
 
 import data from '../../../mock/db.json'; // <----- cannot be async while doing DDD i guess :/ - `fetch` needs to be async, `require`cannot use a variable
 
-class ProductRepositoryJson implements IProductRepository {
+export default class ProductRepositoryJson implements IProductRepository {
   products: Product[];
 
   constructor() {
@@ -74,4 +74,3 @@ class ProductRepositoryJson implements IProductRepository {
     }
 }
 
-export { ProductRepositoryJson };

@@ -1,7 +1,7 @@
 import Card from "./Card";
 import React from "react";
 
-import { ProductService } from "../domain/service/ProductService";
+import ProductService from "../presentation/service/ProductService";
 
 const products = new ProductService().getProducts();
 
@@ -10,12 +10,7 @@ const CardDeck: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {products.map((product) => (
         <Card
-          key={product.id}
-          id={product.id}
-          title={product.title}
-          desc={product.desc}
-          price={product.price}
-          img={product.img}
+          product={product}
         />
       ))}
     </div>

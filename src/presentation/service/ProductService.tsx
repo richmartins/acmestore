@@ -1,9 +1,9 @@
 
-import { Product } from '../entity/product/Product';
-import { IProductRepository } from '../repository/product/IProductRepository';
-import { ProductRepositoryJson } from '../repository/product/ProductJsonRepository';
+import Product from '../../domain/entity/product/Product';
+import IProductRepository from '../../domain/repository/product/IProductRepository';
+import ProductRepositoryJson from '../../domain/repository/product/ProductJsonRepository';
 
-class ProductService {
+export default class ProductService {
     productRepository: IProductRepository = new ProductRepositoryJson();
 
     getProducts(): Product[] {
@@ -26,5 +26,3 @@ class ProductService {
         this.productRepository.deleteProduct(id);
     }
 }
-
-export { ProductService}

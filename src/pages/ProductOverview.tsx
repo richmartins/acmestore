@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ProductService } from "../domain/service/ProductService";
+import ProductService from "../presentation/service/ProductService";
 import { useParams } from "react-router-dom";
 
 const productService = new ProductService();
