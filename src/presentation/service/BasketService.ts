@@ -20,16 +20,4 @@ export default class BasketService {
   clearBasket(): void {
     return this.basketRepository.clearBasket();
   }
-
-  subscribe(callback: (basket: IBasket) => void): void {
-    window.addEventListener("storage", () => {
-      callback(this.getBasket());
-    });
-  }
-
-  unsubscribe(callback: (basket: IBasket) => void): void {
-    window.removeEventListener("storage", () => {
-      callback(this.getBasket());
-    });
-  }
 }

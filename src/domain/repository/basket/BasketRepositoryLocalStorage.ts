@@ -4,27 +4,23 @@ import Basket from "../../entity/basket/Basket";
 import IProduct from "../../entity/product/IProduct";
 
 export default class BasketRepositoryLocalStorage implements IBasketRepository {
-
-    basket: IBasket = new Basket(0);
-
     getBasket(): IBasket {
         const basket = localStorage.getItem('basket');
         if (basket) {
             return JSON.parse(basket);
         }
-
-        return this.basket;
+        return new Basket(0);
     }
 
     addProduct(product: IProduct): void {
         let basket = this.getBasket();
-        this.basket['products'] = [...basket['products'], product]
-        localStorage.setItem('basket', JSON.stringify(this.basket));
+        basket['products'] = [...basket['products'], product]
+        localStorage.setItem('basket', JSON.stringify(basket));
     }
 
     removeProduct(id: number): void {
         const basket = this.getBasket();
-        this.basket['products'] = basket['products'].filter((product: IProduct) => product.id !== id);
+        basket['products'] = basket['products'].filter((product: IProduct) => product.id !== id);
         localStorage.setItem('basket', JSON.stringify(basket));
     }
 

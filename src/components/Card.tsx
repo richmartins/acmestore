@@ -1,16 +1,18 @@
 import React from "react";
 import Button from "./Button";
-import BasketService from "../presentation/service/BasketService";
 import { Link } from "react-router-dom";
 import IProduct from "../domain/entity/product/IProduct";
+import useBasketStore from "../stores/basketStore";
 
 type CardProps = {
   product: IProduct
 };
 
-let basketService = new BasketService();
 
 const Card: React.FC<CardProps> = ({ product }) => {
+
+  const basketStore = useBasketStore();
+
   return (
     <Link to={`/product/${product.id}`}>
       <div className="bg-white p-4 rounded shadow-md">
@@ -23,7 +25,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
           type="button"
           text="Add to cart"
           onClick={() => {
-            basketService.addProduct(product);
+            basketStore.add(product);
           }}
         />
       </div>

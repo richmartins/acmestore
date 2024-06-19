@@ -8,7 +8,6 @@ import ProductOverview from "./pages/ProductOverview";
 
 function App() {
   return (
-
     <BrowserRouter>
       <Header></Header>
       <div className="wrapper w-full flex flex-col justify-center items-center min-h-screen py-5">
