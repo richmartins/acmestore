@@ -13,6 +13,7 @@ interface BasketStore {
 }
 const useBasketStore = create<BasketStore>((set) => ({
     nbItems: basketService.getBasket().products.length,
+    products: basketService.getBasket().products,
     add: (product) => {
         basketService.addProduct(product);
         set((state) => ({
