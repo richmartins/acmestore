@@ -1,5 +1,4 @@
-
-import IProduct from './IProduct';
+import IProduct from "./IProduct";
 
 export default class Product implements IProduct {
     id: number;
@@ -8,7 +7,13 @@ export default class Product implements IProduct {
     desc: string;
     img: string;
 
-    constructor(id: number, name: string, price: number, description: string, img: string) {
+    constructor(
+        id: number,
+        name: string,
+        price: number,
+        description: string,
+        img: string
+    ) {
         this.id = id;
         this.title = name;
         this.price = price;
