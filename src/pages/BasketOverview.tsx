@@ -1,17 +1,19 @@
 import React from "react";
 
-import BasketService from "../presentation/service/BasketService";
+import IProduct from "../domain/entity/product/IProduct";
 import useBasketStore from "../stores/basketStore";
-import SetBasket from "../utils/SetBasket";
+import  { ProductBasketSet } from "../utils/SetBasket";
 import Button from "../components/Button";
 
-const basket = new BasketService().getBasket();
-const basketSet = SetBasket(basket["products"]).products;
 
 const BasketOverview: React.FC = () => {
     const basketStore = useBasketStore();
 
-    if (basket["products"].length === 0) {
+    const basket = useBasketStore(
+        (state: { products: ProductBasketSet }) => state.products
+    ).products;
+
+     if (basket.length === 0) {
         return (
             <>
                 <div className="flex flex-col items-center justify-center">
@@ -27,7 +29,8 @@ const BasketOverview: React.FC = () => {
                     <h1 className="px-2 text-2xl font-bold w-full text-center">Basket Overview</h1>
                     <span className="flex flex-row justify-center">
                         <div className="flex flex-col w-[60%]">
-                            {basketSet.map((product: any) => {
+
+                            {basket.map((product: any) => {
                                 return (
                                     <div
                                         key={product.id}
