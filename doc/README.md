@@ -77,7 +77,7 @@ Ci-dessous les différentes illustration des diagrammes de séquence des cas d'u
 
 ### Diagramme de classe (WIP)
 
-![diag_class](./assets/diag_class.png)
+![diag_class](./assets/DIAG-CLASS.png)
 
 ### Diagramme de paquet
 
