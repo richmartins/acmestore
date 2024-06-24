@@ -1,7 +1,7 @@
 import React from "react";
 
 import IProduct from "../domain/entity/product/IProduct";
-import useBasketStore from "../stores/basketStore";
+import useBasketStore from "../infrastructure/stores/basketStore";
 import  { ProductBasketSet } from "../utils/SetBasket";
 import Button from "../components/Button";
 

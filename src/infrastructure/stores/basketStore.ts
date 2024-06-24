@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
-import BasketService from "../presentation/service/BasketService";
-import {SetBasket, ProductBasketSet} from "../utils/SetBasket";
-import IProduct from "../domain/entity/product/IProduct";
+import BasketService from "../../presentation/service/BasketService";
+import {SetBasket, ProductBasketSet} from "../../utils/SetBasket";
+import IProduct from "../../domain/entity/product/IProduct";
 
 let basketService = new BasketService();
 

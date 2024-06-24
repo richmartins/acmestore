@@ -17,86 +17,10 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 * Composants -> `components`
 * Page -> `pages`
 * Ressources, e.g. images, etc... -> `assets`
-* Tout ce qui est de la modilisation "Domain Driven Development" est contenu dans les dossiers `domain` et `presentation`.
+* Tout ce qui est de la modilisation "Domain Driven Development" est contenu dans les dossiers `domain`, `infrastructure` et `presentation`.
+* J'ai aussi utilisé classes dites "utilitaire" qui se trouvent dans le dossier `utils` 
 
-À la racine nous trouverons les fichiers utilisé par react.js, comme par exemple des fichiers des configurations. Ci-dessous la structure :
-
-```
-.
-├── README.md
-├── doc
-│   ├── README.md
-│   ├── assets
-│   │   ├── UC-001-AC-001.png
-│   │   ├── acmestore_uc_diag.png
-│   │   ├── diag_class.png
-│   │   ├── diag_package.png
-│   │   ├── mockup-2023-10-04.png
-│   │   ├── mockup_v2-2023-10-04.png
-│   │   └── wireframe_final-2023-10-04.png
-│   ├── assignement
-│   │   └── Cahier des charges TP Acmestore.pdf
-│   └── uc
-│       ├── uc-001.md
-│       └── uc-002.md
-├── node_modules  [874 entries exceeds filelimit, not opening dir]
-├── package-lock.json
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-├── src
-│   ├── App.css
-│   ├── App.test.tsx
-│   ├── App.tsx
-│   ├── assets
-│   │   ├── logo.svg
-│   │   └── shopping-cart.png
-│   ├── components
-│   │   ├── Basket.tsx
-│   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   ├── CardDeck.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── Logo.tsx
-│   │   ├── LogoBasket.tsx
-│   │   └── NavBar.tsx
-│   ├── domain
-│   │   ├── entity
-│   │   │   ├── basket
-│   │   │   └── product
-│   │   └── repository
-│   │       ├── basket
-│   │       └── product
-│   ├── index.css
-│   ├── index.tsx
-│   ├── logo.svg
-│   ├── mock
-│   │   └── db.json
-│   ├── pages
-│   │   ├── BasketOverview.tsx
-│   │   ├── Home.tsx
-│   │   ├── Login.tsx
-│   │   └── ProductOverview.tsx
-│   ├── presentation
-│   │   └── service
-│   │       ├── BasketService.ts
-│   │       └── ProductService.ts
-│   ├── react-app-env.d.ts
-│   ├── reportWebVitals.ts
-│   ├── setupTests.ts
-│   ├── stores
-│   │   └── basketStore.ts
-│   └── utils
-│       └── SetBasket.ts
-├── tailwind.config.js
-└── tsconfig.json
-```
+À la racine nous trouverons les fichiers utilisé par react.js, comme par exemple des fichiers des configurations.
 
 ## Architecture
 
@@ -181,9 +105,31 @@ Version 3 (Final)
 
 #### Mockup
 
+Ci-dessous les mockups des 4 pages principal vu dans les wireframes précédents.
+
+**Catalogue**
+![mockup-1](./assets/mockup-1.jpg)
+
+**Login**
+![mockup-2](./assets/mockup-2.jpg)
+
+**Détail produit**
+![mockup-3](./assets/mockup-3.jpg)
+
+**Panier**
+![mockup-4](./assets/mockup-4.jpg)
+
 ### Prototype
 
 # Norme de programmation et conventions
 
+Dans le cadre du développement de cette application, j'ai adopté des normes de programmation et des conventions strictes afin de garantir la qualité, la lisibilité et la maintenabilité du code. J'ai suivi les recommandations du guide de style de code de [typescript](https://ts.dev/style/), qui définit les règles de syntaxe, de formatage et d'organisation du code. De plus, j'ai aussi adopté une convention de nommage cohérente pour les variables, les fonctions et les classes, afin de faciliter la compréhension du code par les autres développeurs."
+
 # Conclusion
 
+En conclusion, ce projet a été très bénéfique pour moi car j'ai pu mettre en œuvre plusieurs aspects de l'architecture logicielle et j'ai également pu appliquer les principes de conception d'un "frontend" solide et maintenable. Cependant, il reste encore quelques fonctionnalités à développer, telles que :
+
+- Le backoffice
+- L'ajout de produits
+
+Si j'ai l'opportunité de travailler sur ce projet à l'avenir, j'envisage d'implémenter ces fonctionnalités afin de fournir une solution complète et répondant aux besoins des utilisateurs.
