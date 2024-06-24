@@ -4,6 +4,8 @@
 
 Pendant le cours _"Composants d'application"_ de la session 2023-24 de l'[IDEC](https://idec.swiss) dans le cadre du Brevet fédéral d'[ICT-Application Development Specialist](https://www.ict-berufsbildung.ch/formation-continue/brevet-federal/ict-application-development-specialist), j'ai dû effectué la partie conception et implémentation du frontend d'un projet qui vise a developpé une application web de vente de produit en ligne selon le cahier des charges établi dans le fichier annexe : [Cahier des charges TP Acmestore.pdf](./assignements/Cahier%20des%20charges%20TP%20Acmestore.pdf).
 
+Pour des questions de planification il nous a été demander uniquement de détaillé 3 à 5 cas d'utilisation avec un diagramme d'activité ainsi qu'un diagramme de séquence
+
 # Architecture et structure du code
 
 ## Structure du code
@@ -118,11 +120,17 @@ Ci-dessous les différentes illustration des diagrammes d'activités des cas d'u
 
 ![UC-001-AC-001](./assets/UC-001-AC-001.png)
 
+#### UC2-002-AC-001
+
+![UC-002-AC-001](./assets/UC-002-AC-001.png)
+
 #### UC-003-AC-001
 
 ![UC-003-AC-001](./assets/UC-003-AC-001.png)
 
-#### UC2-002-AC-001
+#### UC-004-AC-001
+
+![UC-004-AC-001](./assets/UC-004-AC-001.png)
 
 ### Diagramme des séquence
 
@@ -132,19 +140,27 @@ Ci-dessous les différentes illustration des diagrammes de séquence des cas d'u
 
 ![UC-001-SEQDIAG-001](./assets/UC-001-SEQDIAG-001.png)
 
-#### UC-003-SEQDIAG : Diagramme de séquence
+#### UC-002-SEQDIAG-001
+
+![UC-002-SEQDIAG-001](./assets/UC-002-SEQDIAG-001.png)
+
+#### UC-003-SEQDIAG-001
 
 ![UC-003-SEQDIAG-001](./assets/UC-003-SEQDIAG-001.png)
+
+#### UC-004-SEQDIAG-001
+
+![UC-004-SEQDIAG-001](./assets/UC-004-SEQDIAG-001.png)
 
 ### Diagramme de classe (WIP)
 
 ![diag_class](./assets/diag_class.png)
 
-### Diagramme de paquet (WIP)
+### Diagramme de paquet
 
 En suivant le principe *"Domain Driven Design"* le diagramme ci-dessous illustre l'architecture de l'application
 
-![diag_package](./assets/diag_package.png)
+![diag_package](./assets/PACKAGE-DIAG.png)
 
 ### Design
 
