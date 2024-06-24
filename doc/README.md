@@ -125,7 +125,7 @@ Ci-dessous les différentes illustration des diagrammes d'activités des cas d'u
 
 #### UC-003-AC-001
 
-![UC-003-AC-001](./assets/UC-003-AC-001.png)
+![UC-003-AC-001](./assets/UC-003-AC-002.png)
 
 #### UC-004-AC-001
 
@@ -137,7 +137,7 @@ Ci-dessous les différentes illustration des diagrammes de séquence des cas d'u
 
 #### UC-001-SEQDIAG-001
 
-![UC-001-SEQDIAG-001](./assets/UC-001-SEQDIAG-001.png)
+![UC-001-SEQDIAG-001](./assets/UC-001-SEQDIAG-002.png)
 
 #### UC-002-SEQDIAG-001
 
