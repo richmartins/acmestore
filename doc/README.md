@@ -106,11 +106,10 @@ C'est dire que nous avons un dossier principal `src` où tout le code source se 
 
 ### Cas d'utilisations
 
-Comme convenu lors de ce cours, ci-dessous 5 cas d'utilisation détaillés :
-
 * [Cas d'utilisation 001 - (Voir la liste des produits)](./uc/uc-001.md)
 * [Cas d'utilisation 002 - (Voir détail de produit)](./uc/uc-002.md)
 * [Cas d'utilisation 003 - (Gérer panier)](./uc/uc-003.md)
+* [Cas d'utilisation 004 - (Ajouter un produit à la boutique)](./uc/uc-004.md)
 
 ### Diagrammes d'activité
 
